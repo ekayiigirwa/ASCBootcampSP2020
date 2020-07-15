@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Map</title>
+        <link href="style.css" rel= "stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <h1>This Map is of the volcanoes</h1>
+        <h2> Let's see Rwanda Volcanoes</h2>
+
+        <p>Pay attention to the beauty of it.
+         <img src="volcanoes.jpg" alt= "volcano image here" width="450" height="300">   
+        </p>
+
+        <p>Oh there are gorillas too. If this ain't beauty, i dont kno what is.</p>
+        <p>
+            <!-- the src attribute as well to give like the link to the image.-->
+            <img src="gorillas live!.jpg" alt= "volcano image here" width="450" height="300">
+        </p>
+        <p>For more information visit: 
+            <!-- the href is called the attribute which is put inside the 
+            opening tag. -->>
+            <a href = "https://www.volcanoesparkrwanda.org/"> Volcanoes Park Rwanda.</a>
+        </p>
+        <!--We added a new div which is like a container of a specific
+        content on our page. We will have our video here.-->
+        <div class="video">
+            <!-- We will add the scripts in order to get the video
+             to play when we hit watch me, or hide the video when we hit Hide-->
+
+            <button type="button" onclick="showVideo"> Watch Me</button>
+            <button type="button" onclick="hide">Show Less</button>
+            <br><br>
+            <!-- The video is here. -->
+            <iframe width="600" height="315"
+                src="https://www.youtube.com/embed/g_nBe6Roo30">
+            </iframe>
+            
+            
+        </div>
+    </body>
+</html>
