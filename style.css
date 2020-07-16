@@ -1,22 +1,21 @@
 body {
-    background-color: palegoldenrod;
-  }
-  h1 {
-    color: green;
-    font-family: verdana;
-    font-size: 150%;
-    padding: 30px;
-  }
-  h2 {
-    color: green;
-    font-family: verdana;
-    font-size: 150%;
-    padding: 30px;
-  }
-  p {
-    color: blue;
-    font-family: courier;
-    border: 2px  palegoldenrod;
-    padding: 100px;
-    margin: 50px;
-  }
+  background-color: paleturquoise;
+}
+h1 {
+  color: green;
+  font-family: verdana;
+  font-size: 150%;
+  padding: 30px;
+}
+h2 {
+  color: green;
+  font-family: verdana;
+  font-size: 150%;
+  padding: 30px;
+}
+p {
+  color: black;
+  font-family: courier;
+  
+  margin: 50px;
+}
