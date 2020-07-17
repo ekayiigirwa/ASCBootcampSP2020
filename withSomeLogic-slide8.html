@@ -3,6 +3,7 @@
     <head>
         <title>The Map</title>
         <link href="style.css" rel= "stylesheet" type="text/css">
+
     </head>
     <body>
 
@@ -20,36 +21,31 @@
         </p>
         <p>For more information visit: 
             <!-- the href is called the attribute which is put inside the 
-            opening tag. -->>
+            opening tag. -->
             <a href = "https://www.volcanoesparkrwanda.org/"> Volcanoes Park Rwanda.</a>
         </p>
         <!--We added a new div which is like a container of a specific
         content on our page. We will have our video here.-->
-        <div>
-            <!-- We will add the scripts in order to get the video
-             to play when we hit watch me, or hide the video when we hit Hide-->
-            
-            <button type="button" onclick="showVideo(1)"> Watch Me</button>
-            <button type="button" onclick="showVideo(0)">Show Less</button>
-            <br><br>
-            <!-- The video is here. -->
-            <iframe id = "video" width="600" height="315"
+        
+       
+        <p id = "demo1"> </p>
+        <button type="button"
+        onclick= "document.getElementById('demo1').innerHTML = Date()">
+        Click me.</button>
 
-            </iframe>
+        <p id="demo2"> Other stuff?</p>
+        
+        <button type="button" onclick= "myFunction()"> Click me </button>
+        </p> 
         
             
-        </div>
         <script>
-                function showVideo(s) {
-                    var video = document.getElementById("video");
-                    if (s == 1) {
-                        video.src = ""
-                    } else {
-                        video.src = "https://www.youtube.com/embed/g_nBe6Roo30"
-                    }
-                    document.getElementById("video").src = video;
-                }
+        function myFunction() { 
+            v = document.getElementById("demo2");
+            v.insertAdjacentHTML("afterend", "<p>You can add them here.</p>"); 
+        }
         </script>
+        
             
     </body>
 </html>
