@@ -21,3 +21,9 @@ eg: cp ~/website/index.html  ~/aboutMe(which is your repository on your computer
 - To Commit: git commit -m  “write a message to explain”
 - To push your changes to Github: git push origin master
 - To make sure that your master is actually up to date: Run “git pull”
+
+To make sure that your master on github is in-sync with master on your local computer, run this command:
+* git reset --soft HEAD~1
+- Then, commit as per usual: git commit -m “your message”
+- Then, push: git push origin master
+
