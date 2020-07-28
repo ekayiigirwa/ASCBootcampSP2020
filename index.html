@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Map</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="style.css" rel= "stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <h1>This Map is of the volcanoes</h1>
+        <h2> Let's see Rwanda's Volcanoes</h2>
+
+        <p>Pay attention to the beauty of it.
+         <img src="volcanoes.jpg" alt= "volcano image here" width="450" height="300">   
+        </p>
+
+        <p>Oh there are gorillas too. If this ain't beauty, i dont kno what is.</p>
+        <p>
+            <!-- the src attribute as well to give like the link to the image.-->
+            <img src="gorillas live!.jpg" alt= "volcano image here" width="450" height="300">
+        </p>
+        <p>For more information visit: 
+            <!-- the href is called the attribute which is put inside the 
+            opening tag. -->>
+            <a href = "https://www.volcanoesparkrwanda.org/"> Volcanoes Park Rwanda.</a>
+        </p>
+        <!--We added a new div which is like a container of a specific
+        content on our page. We will have our video here.-->
+        <div class="video">
+            <!-- We will add the scripts in order to get the video
+             to play when we hit watch me, or hide the video when we hit Hide-->
+            <!-- The video is here. -->
+            <p id="optionalP"> 
+            <iframe id="video" src="showLess.html" width=400 height = 50>
+            </iframe>
+        
+        </p> 
+        <button type="button" onclick= "showMore()"> Show more </button>
+        <button type ="button" onclick= "showLess()"> Show less</button> 
+            
+
+        </div>
+        <br><br>
+        <!-- Geolocation API in order to spot one's current position. -->
+        <div id="location"> 
+            <button onclick="getLocation()">You are here!</button>
+        </div>
+        </div>
+        <br><br>
+        <!-- Embedding our Google map. We used the iframe tag as it allows
+        to embed a whole new document (the google api html for our case)
+        into the rest of the document as an independent structure. -->
+        <iframe id="map" src = "withgoogleapi.html" width=600 height = 315> </iframe>
+        
+        <!-- Some javascript that shows how one can add logic to the website. -->
+        <script>
+                var x = document.getElementById("location");
+                function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+                }
+
+                function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude; 
+                }
+                function showMore() { 
+                v = document.getElementById("video");
+                v.width = 600;
+                v.height = 315;
+                
+                v.src = "https://www.youtube.com/embed/g_nBe6Roo30"
+            }
+            function showLess(){
+                v = document.getElementById("video");
+                v.width = 400;
+                v.height = 50;
+                v.src = ""
+                v.src = "showLess.html";
+                
+
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+    </body>
+</html>

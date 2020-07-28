@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- THis is how you can include Google API to your Website. Please refer
+To google cloud platform for more info. However, here is a basic instrustion 
+to include the google map and a marker of location into your website. -->
+<html>
+    <head> 
+        <title>Page Title</title>
+        <style>
+            #map {
+                height: 100%;
+            }
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>function initMap() {  
+                    var map = new google.maps.Map(document.getElementById("map"), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                     });
+
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({position: { lat: -34.397, lng: 150.644 }, map: map});
+                
+                
+                }
+                
+                </script>
+
+        <script async defer  
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLLk1WOTKVJXiTLyk1XFYll1IebxfTVy8&callback=initMap"
+            type="text/javascript"> 
+            </script>
+
+    </body>
+</html>

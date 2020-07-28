@@ -31,19 +31,26 @@
         <p id = "demo1"> </p>
         <button type="button"
         onclick= "document.getElementById('demo1').innerHTML = Date()">
-        Click me.</button>
+        Show Time</button>
 
         <p id="demo2"> Other stuff?</p>
         
-        <button type="button" onclick= "myFunction()"> Click me </button>
+        <button type="button" onclick= "myFunction()"> New Paragraph </button>
         </p> 
+        <p id="optionalP"> 
+            <iframe id="video" src="showLess.html" width=400 height = 50>
+            </iframe>
         
-            
+        </p> 
+        <button type="button" onclick= "showMore()"> Show more </button>
+        <button type ="button" onclick= "showLess()"> Show less</button> 
+        <!-- Some javascript that shows how one can add logic to the website. -->   
         <script>
-        function myFunction() { 
-            v = document.getElementById("demo2");
-            v.insertAdjacentHTML("afterend", "<p>You can add them here.</p>"); 
-        }
+            function myFunction() { 
+                v = document.getElementById("demo2");
+                v.insertAdjacentHTML("afterend", "<p>You can add them here.</p>"); 
+            }
+            
         </script>
         
             
