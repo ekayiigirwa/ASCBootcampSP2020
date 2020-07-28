@@ -24,6 +24,8 @@ eg: cp ~/website/index.html  ~/aboutMe(which is your repository on your computer
 
 To make sure that your master on github is in-sync with master on your local computer, run this command:
 * git reset --soft HEAD~1
-- Then, commit as per usual: git commit -m “your message”
+- Then, pull 
+- Solve conflicts
+- Commit as per usual by running: git commit
 - Then, push: git push origin master
 
