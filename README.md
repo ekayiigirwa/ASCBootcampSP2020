@@ -6,7 +6,9 @@ There are multiple files created which start with an introduction to a great web
 The home page will render the index.html page, but if one wants to see how to render other pages as one works through this tutorial, here are the pages:
 Home page is: https://ekayiigirwa.github.io/ASCBootcampSP2020/
 For other pages, add the filename to that path in a format: https://ekayiigirwa.github.io/ASCBootcampSP2020/Filename
-Eg: https://ekayiigirwa.github.io/ASCBootcampSP2020/
+
+Eg: https://ekayiigirwa.github.io/ASCBootcampSP2020/withSomeLogic-slide7.html
+
 
 Git Commands:
 
