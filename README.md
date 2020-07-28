@@ -4,6 +4,9 @@ This a project I built for the bootcamp which introduces students of Agnes Scott
 There are multiple files created which start with an introduction to a great website. At the end, people should incorporate APIs to help their website become more functional.
 
 The home page will render the index.html page, but if one wants to see how to render other pages as one works through this tutorial, here are the pages:
+Home page is: https://ekayiigirwa.github.io/ASCBootcampSP2020/
+For other pages, add the filename to that path in a format: https://ekayiigirwa.github.io/ASCBootcampSP2020/Filename
+Eg: https://ekayiigirwa.github.io/ASCBootcampSP2020/
 
 Git Commands:
 
